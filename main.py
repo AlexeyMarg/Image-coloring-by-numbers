@@ -128,7 +128,7 @@ class app_window(QWidget):
         result_groupbox = QGroupBox()
         result_grid = QGridLayout()
         
-        self.result_combo = QComboBox('Result')
+        self.result_combo = QComboBox()
         self.result_combo.addItems(img_status)
         self.result_combo.resize(self.result_combo.sizeHint())
         self.result_combo.currentIndexChanged.connect(self.result_combo_changed)
